@@ -1,0 +1,70 @@
+name: Tool submission
+description: Submit a Claude skill or connector for review
+title: "[Submission] <tool name>"
+labels: ["submission"]
+body:
+  - type: input
+    id: link
+    attributes:
+      label: Link to the tool and version or commit
+      description: Public repository or folder, plus the release tag or commit SHA to review
+    validations:
+      required: true
+  - type: input
+    id: authors
+    attributes:
+      label: Authors and institutions
+      description: Used to avoid a conflict of interest when assigning a reviewer
+    validations:
+      required: true
+  - type: textarea
+    id: requirements
+    attributes:
+      label: Environment, dependencies and credentials
+      description: Required OS, software, data downloads or API keys. Test cases should use open data and free endpoints, so reviewers do not pay for API access or licences.
+    validations:
+      required: true
+  - type: dropdown
+    id: field
+    attributes:
+      label: Field
+      options:
+        - Earth science
+        - Life science
+        - Chemistry and materials
+        - Physics and astronomy
+        - Mathematics and statistics
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: subfield
+    attributes:
+      label: Subfield
+      placeholder: e.g. seismology, genomics
+  - type: textarea
+    id: description
+    attributes:
+      label: What it does
+      description: Two or three sentences. Which data or software does it connect to, and what can a user ask it to do?
+    validations:
+      required: true
+  - type: textarea
+    id: tests
+    attributes:
+      label: Test cases with known answers
+      description: One or two cases a reviewer can start from, with the expected result and where it comes from (paper, catalogue, benchmark).
+    validations:
+      required: true
+  - type: textarea
+    id: limits
+    attributes:
+      label: Known limits
+      description: Anything you already know does not work.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Confirmation
+      options:
+        - label: The tool is openly available under a license that permits testing, and I agree the review report may be published openly (CC BY 4.0).
+          required: true

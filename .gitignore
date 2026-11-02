@@ -1,0 +1,4 @@
+data/reviewers.csv
+data/assignments.csv
+__pycache__/
+.DS_Store
