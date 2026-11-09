@@ -4,11 +4,13 @@ An informal, community-run review for Claude skills and connectors, run as a one
 
 ## Why
 
-Anyone can share a skill or connector on GitHub, but a scientist from outside a subfield can not easily tell whether it installs and reproduces known results. Here a volunteer reviewer from the field runs a specific version of the tool on one or two cases with known answers and posts a short report. If the cases are reproduced, the submission gets a `tested` label with a link to the report. The label means one reviewer reproduced those cases on that version, it is not a guarantee of general correctness.
+Anyone can share a skill or connector on GitHub, but a scientist from outside a subfield can not easily tell whether it installs and reproduces known results. Here a volunteer reviewer from the field or a nearby one runs a specific version of the tool on one or two cases with known answers and posts a short report. If the cases are reproduced, the submission gets a `tested` label with a link to the report. The label means one reviewer reproduced those cases on that version, it is not a guarantee of general correctness.
 
 ## Submitting a tool
 
 Open a new issue with the **Tool submission** template. You will be asked for a link to the tool and the version or commit, the authors, what it needs to run, a short description, the field, and one or two test cases with known answers that a reviewer can start from. You can submit tools you wrote or tools from your group. Test cases should use open data and free endpoints, so a reviewer does not need paid credentials.
+
+To keep the reviews balanced, each group who submits a tool is asked to also review one tool from another group during the pilot, if there is one in a field close to yours (a student or postdoc from the group is fine). Two groups do not review each other's tools. We keep a simple public count of the reviews each group has done.
 
 ## Reviewing
 
@@ -18,7 +20,7 @@ AI agents may run the same tools in the background, and reviewer reports may be 
 
 A review is not a peer review of a paper. The questions are simple: does it install, does it reproduce the known cases, and what are its limits.
 
-Reviewers and area editors do not handle tools from their own group or close collaborators. When an area editor submits a tool, another area editor or an independent volunteer handles that issue.
+Reviewers do not handle tools from their own group or close collaborators. When the organizer submits a tool, an independent volunteer outside the group handles any disagreement on that issue.
 
 Skills and connectors run code on your machine. Please look through the repository before installing, and run unfamiliar tools in a container, a VM or a restricted account without sensitive keys. If a submission needs paid credentials, proprietary software or hardware you do not have, please pass on it.
 
@@ -28,20 +30,15 @@ Skills and connectors run code on your machine. Please look through the reposito
 - `tested-with-caveats`: reproduced, with notable limitations
 - `needs-changes`: installation failed or the cases did not match
 
-After `needs-changes` the author may push fixes and post the new commit on the same issue, for a brief re-check by the reviewer (if willing) or the area editor. A label applies only to the version that was reviewed.
+After `needs-changes` the author may push fixes and post the new commit on the same issue, for a brief re-check by the reviewer (if willing) or the organizer. A label applies only to the version that was reviewed.
 
 ## Recognition
 
 Reviewers and the tools they reviewed are listed on the Discourse at the end of the pilot.
 
-## Fields and area editors
+## Organizer
 
-| Field | Area editor |
-|---|---|
-| Earth science | Lingsen Meng (UCLA) |
-| Other fields | open, please volunteer on the Discourse |
-
-Area editors step in when a submission is not picked up or when author and reviewer disagree.
+During the pilot Lingsen Meng (UCLA) handles the assignments, and steps in when a submission is not picked up or when author and reviewer disagree. If you would like to help with another field, please reply on the Discourse.
 
 ## Labels
 

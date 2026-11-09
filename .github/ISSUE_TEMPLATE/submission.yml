@@ -68,3 +68,5 @@ body:
       options:
         - label: The tool is openly available under a license that permits testing, and I agree the review report may be published openly (CC BY 4.0).
           required: true
+        - label: Our group will review one tool from another group during the pilot, if there is one in a field close to ours (a student or postdoc from the group is fine).
+          required: true
